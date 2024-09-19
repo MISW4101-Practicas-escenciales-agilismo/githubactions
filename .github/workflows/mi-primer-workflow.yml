@@ -39,7 +39,7 @@ jobs:
           coverage report -m
     - name: Imprimir
       id: imprimir
-      run: echo "::set-output name=respuesta::${MENSAJE_EXITO}"
+      run: echo "hola"
 
   Mi-segundo-job:
     needs: job1

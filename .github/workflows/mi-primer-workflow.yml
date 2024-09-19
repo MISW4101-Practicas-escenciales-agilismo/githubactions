@@ -40,3 +40,12 @@ jobs:
     - name: Imprimir
       id: imprimir
       run: echo "::set-output name=respuesta::${MENSAJE_EXITO}"
+
+  Mi-segundo-job:
+    needs: job1
+    name: Mi segundo job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Imprimir
+      id: imprimir
+      run: echo ${{needs.job1.outputs.salida}}

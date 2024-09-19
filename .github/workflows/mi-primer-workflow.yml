@@ -40,8 +40,8 @@ jobs:
     - name: Imprimir
       id: imprimir
       env:
-        MENSAJE_EXITO: Hols
-      run: echo "::set-output name=respuesta::${MENSAJE_EXITO}"
+        MENSAJE: ${MENSAJE_EXITO}
+      run: echo "::set-output name=respuesta::${MENSAJE}"
 
   Mi-segundo-job:
     needs: job1

@@ -2,7 +2,7 @@ import unittest
 import datetime
 from model.base import Session, engine, Base
 from model.persona import Persona
-from faker import Faker
+from faker import Faker  
 
 class PersonaTestCase(unittest.TestCase):
     def setUp(self):
